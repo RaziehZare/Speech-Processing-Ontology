@@ -29,6 +29,40 @@ Developed following Bermejo's structured approach:
 4.  **Class Creation & Hierarchy Design:** 79 main concepts with carefully resolved terminological overlaps (e.g., Speaker Verification vs. Voice Discrimination).
 5.  **Relationship Definition:** Properties like 'precedes' and 'followed by' create a dynamic knowledge network.
 
+##  Repository Structure
+Speech-Processing-Ontology/
+├── Speech_Processing_Ontology.owl # Main ontology file (OWL format)
+├── docs/ # Supplementary documentation
+│ └── Speech_Processing_Ontology_Report.pdf # Full project report
+├── LICENSE # MIT License
+└── README.md
+
+
+## Getting Started
+
+### Prerequisites
+- **Protégé** ontology editor ([Download here](https://protege.stanford.edu/)) to view, explore, and edit the ontology.
+
+### Installation & Exploration
+1. Clone this repository:
+   ```bash
+   git clone https://github.com/[YourUsername]/Speech-Processing-Ontology.git
+2. Open the Speech_Processing_Ontology.owl file in Protégé.
+3. Explore the class hierarchy, object properties, and data properties through the Protégé interface.
+
+## Citation
+If you use this ontology in academic work, please cite:
+@software{Zare_Speech_Processing_Ontology_2025,
+  author = {Zare, Razieh},
+  title = {Speech Processing Ontology},
+  year = {2025},
+  publisher = {GitHub},
+  journal = {GitHub repository},
+  howpublished = {\url{https://github.com/RaziehZare/Speech-Processing-Ontology}}
+}
+ ## License
+This project is open source and available under the MIT License.
+
 ## Acknowledgments
 - This ontology was developed as a course project for **Knowledge Engineering and Ontology** at the **University of Isfahan** in July 2024.
 - Supervisor: **Dr. CheshmehSohrabi**
