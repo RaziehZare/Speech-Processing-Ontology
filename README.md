@@ -31,11 +31,12 @@ Developed following Bermejo's structured approach:
 
 ##  Repository Structure
 Speech-Processing-Ontology/
-├── Speech_Processing_Ontology.owl # Main ontology file (OWL format)
-├── docs/ # Supplementary documentation
-│ └── Speech_Processing_Ontology_Report.pdf # Full project report
-├── LICENSE # MIT License
+├── Speech_Processing_Ontology.owl        # Main ontology file (OWL format)
+├── docs/
+│   └── Speech_Processing_Ontology_Report.pdf   # Full project report
+├── LICENSE                                # MIT License
 └── README.md
+
 
 
 ## Getting Started
@@ -53,17 +54,16 @@ Speech-Processing-Ontology/
    
 ## Citation
 
-If you use this ontology in academic work, please cite:
-
-```bibtex
 @software{Zare_Speech_Processing_Ontology_2025,
-  author = {Zare, Razieh},
-  title = {Speech Processing Ontology},
-  year = {2025},
-  publisher = {GitHub},
-  journal = {GitHub repository},
-  howpublished = {\url{https://github.com/RaziehZare/Speech-Processing-Ontology}}
+  author       = {Zare, Razieh},
+  title        = {Speech Processing Ontology},
+  year         = {2025},
+  publisher    = {GitHub},
+  url          = {https://github.com/RaziehZare/Speech-Processing-Ontology},
+  note         = {Developed following Bermejo's methodology (2007)}
 }
+
+
  ## License
 This project is open source and available under the MIT License.
 
