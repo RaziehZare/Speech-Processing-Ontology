@@ -2,7 +2,6 @@
 ![GitHub](https://img.shields.io/badge/Web_Ontology_Language-✓-blue)
 
 # Speech Processing Ontology
-# Speech Processing Ontology
 
 A comprehensive and pioneering computational ontology that formally structures the domain of speech processing tasks. Developed from scratch using Bermejo's methodology (2007), this ontology encapsulates 79 core concepts to serve as a foundational framework for researchers and practitioners in speech science.
 
