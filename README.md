@@ -35,6 +35,7 @@ Speech-Processing-Ontology/
 ├── Speech_Processing_Ontology.owl        # Main ontology file (OWL format)
 ├── docs/
 │   └── Speech_Processing_Ontology_Report.pdf   # Full project report
+    └── ontology_graph.pngSpeech_Processing_KNGraph.png # Ontology Graph Representation
 ├── LICENSE                                # MIT License
 └── README.md
 ```
