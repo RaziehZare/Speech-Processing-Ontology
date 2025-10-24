@@ -1,3 +1,5 @@
 # Language detection
 *.owl linguist-language=Web Ontology Language
 *.owl linguist-detectable=true
+*.java linguist-detectable=true
+linguist-documentation=false
