@@ -1,0 +1,958 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Science#"
+     xml:base="http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Science"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This is a speech processing ontology. Speech processing is an important task in the field of speech science, and this ontology aims to include all speech processing tasks. The intended users of this ontology may be researchers in the field of speech science or anyone who wants to enter this field and become aware of the available areas to undertake tasks in speech processing.</rdfs:comment>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#FollowedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#FollowedBy">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#Precedes"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#SpeechTransmision"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#SpeechCoding"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#HasAlgorithm -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#HasAlgorithm">
+        <rdfs:range rdf:resource="http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#Algorithms"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#HasLanguage -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#HasLanguage">
+        <rdfs:range rdf:resource="http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#Languages"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#HasPart -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#HasPart">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#PartOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#SpeechSegmentation"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#PhonemeSegmentation"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#SyllableSegmentation"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#WordSegmentation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#IsA -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#IsA">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#AuditorySpeechProcessing"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#CochlearImplantSpeechProcessing"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#HearingSpeechProcessing"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#InteractiveSpeechSystems"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#LanguageRecognition"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#MultimodalSpeechProcessing"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#NonVerbalSpeechProcessing"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#PathologicalVoiceRecognition"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#SpeakerDiarization"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#SpeakerRecognition"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#SpeechAnalysis"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#SpeechConversion"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#SpeechDisorderDiagnosis"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#SpeechEnhancement"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#SpeechRecognition"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#SpeechSegmentation"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#SpeechSynthesis"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#SpeechTransmision"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#SpeechProcessing"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#PartOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#PartOf">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#PhonemeSegmentation"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#SyllableSegmentation"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#WordSegmentation"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#SpeechSegmentation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#Precedes -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#Precedes">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#SpeechCoding"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#SpeechTransmision"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#UsedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#UsedBy">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#Uses"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#AcousticFeatureExtraction"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#NoiseRobustness"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#SpeechEnhancement"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#SpeechProcessing"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#Uses -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#Uses">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#SpeechEnhancement"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#SpeechProcessing"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#AcousticFeatureExtraction"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#NoiseRobustness"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#Accuracy -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#Accuracy">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#DependecyToText -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#DependecyToText">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#AccentRecognition -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#AccentRecognition">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#LanguageRecognition"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#AcousticFeatureExtraction -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#AcousticFeatureExtraction">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#SpeechAnalysis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#Algorithms -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#Algorithms"/>
+    
+
+
+    <!-- http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#AngerDetection -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#AngerDetection">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#EmotionDetection"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#AphasiaDetection -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#AphasiaDetection">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#SpeechDisorderDiagnosis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#AudioVisualSpeechRecognition -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#AudioVisualSpeechRecognition">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#MultimodalSpeechProcessing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#AuditorySpeechProcessing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#AuditorySpeechProcessing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#SpeechProcessing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#AutomaticSpeechRecognition -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#AutomaticSpeechRecognition">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#SpeechRecognition"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#ChannelVariability -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#ChannelVariability">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#SpeechQualityImprovement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#CochlearImplantSpeechProcessing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#CochlearImplantSpeechProcessing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#SpeechProcessing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#CryingDetection -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#CryingDetection">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#NonVerbalSpeechProcessing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#Dereverberation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#Dereverberation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#SpeechQualityImprovement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#DysarthriaAssessment -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#DysarthriaAssessment">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#SpeechDisorderDiagnosis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#EchoCancellation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#EchoCancellation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#SpeechQualityImprovement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#EmotionDetection -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#EmotionDetection">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#SentimentAnalysisFromSpeech"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#EndToEndASR -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#EndToEndASR">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#AutomaticSpeechRecognition"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#ExpressiveSpeechSynthesis -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#ExpressiveSpeechSynthesis">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#SpeechSynthesis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#FearDetection -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#FearDetection">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#EmotionDetection"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#GenderRecognitionFromSpeech -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#GenderRecognitionFromSpeech">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#VoiceDiscrimination"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#HappinessDetection -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#HappinessDetection">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#EmotionDetection"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#HearingSpeechProcessing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#HearingSpeechProcessing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#SpeechProcessing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#IntentAnalysis -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#IntentAnalysis">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#SentimentAnalysisFromSpeech"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#InteractiveSpeechSystems -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#InteractiveSpeechSystems">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#SpeechProcessing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#InterspecificVoiceDiscrimination -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#InterspecificVoiceDiscrimination">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#VoiceDiscrimination"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#LanguageRecognition -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#LanguageRecognition">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#SpeechProcessing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#Languages -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#Languages"/>
+    
+
+
+    <!-- http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#LaughterDetection -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#LaughterDetection">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#NonVerbalSpeechProcessing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#MicrophoneArrayProcessing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#MicrophoneArrayProcessing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#SpeechEnhancement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#MultimodalSpeechProcessing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#MultimodalSpeechProcessing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#SpeechProcessing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#NegativeSentimentDetection -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#NegativeSentimentDetection">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#SentimentAnalysisFromSpeech"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#NeutralSentimentDetection -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#NeutralSentimentDetection">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#SentimentAnalysisFromSpeech"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#NoiseRobustness -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#NoiseRobustness">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#SpeechQualityImprovement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#NonVerbalSpeechProcessing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#NonVerbalSpeechProcessing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#SpeechProcessing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#OpinionMining -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#OpinionMining">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#SentimentAnalysisFromSpeech"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#PathologicalVoiceRecognition -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#PathologicalVoiceRecognition">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#SpeechProcessing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#PhonemeSegmentation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#PhonemeSegmentation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#SpeechSegmentation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#PhoneticAnalysis -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#PhoneticAnalysis">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#SpeechAnalysis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#PolarityDetection -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#PolarityDetection">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#SentimentAnalysisFromSpeech"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#PositiveSentimentDetection -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#PositiveSentimentDetection">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#SentimentAnalysisFromSpeech"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#ProsodicAnalysis -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#ProsodicAnalysis">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#SpeechAnalysis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#SadDetection -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#SadDetection">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#EmotionDetection"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#SarcasmDetection -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#SarcasmDetection">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#SentimentAnalysisFromSpeech"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#SentimentAnalysisFromSpeech -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#SentimentAnalysisFromSpeech">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#SpeechAnalysis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#SingingVoiceSynthesis -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#SingingVoiceSynthesis">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#SpeechSynthesis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#SpeakerClustering -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#SpeakerClustering">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#SpeakerDiarization"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#SpeakerDiarization -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#SpeakerDiarization">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#SpeechProcessing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#SpeakerIdentification -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#SpeakerIdentification">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#SpeakerRecognition"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#SpeakerRecognition -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#SpeakerRecognition">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#SpeechProcessing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#SpeakerVerification -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#SpeakerVerification">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#SpeakerRecognition"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#VoiceDiscrimination"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#DependecyToText"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#SpeechAnalysis -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#SpeechAnalysis">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#SpeechProcessing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#SpeechCoding -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#SpeechCoding">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#SpeechTransmision"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#SpeechConversion -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#SpeechConversion">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#SpeechProcessing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#SpeechDenoising -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#SpeechDenoising">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#SpeechQualityImprovement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#SpeechDisorderDiagnosis -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#SpeechDisorderDiagnosis">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#SpeechProcessing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#SpeechEnhancement -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#SpeechEnhancement">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#SpeechProcessing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#SpeechIntelligibilityAnalysis -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#SpeechIntelligibilityAnalysis">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#SpeechAnalysis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#SpeechInteraction -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#SpeechInteraction">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#InteractiveSpeechSystems"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#SpeechPaceAndRhythmAnalysis -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#SpeechPaceAndRhythmAnalysis">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#SpeechAnalysis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#SpeechProcessing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#SpeechProcessing">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#HasAlgorithm"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#Algorithms"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#HasLanguage"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#Languages"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#Accuracy"/>
+                <owl:someValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">100.0</xsd:maxInclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#SpeechQualityImprovement -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#SpeechQualityImprovement">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#SpeechEnhancement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#SpeechRecognition -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#SpeechRecognition">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#SpeechProcessing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#SpeechSegmentation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#SpeechSegmentation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#SpeechProcessing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#SpeechSynthesis -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#SpeechSynthesis">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#SpeechProcessing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#SpeechToSpeechTranslation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#SpeechToSpeechTranslation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#SpeechConversion"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#SpeechTransmision -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#SpeechTransmision">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#SpeechProcessing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#SpeechTransmisionOverNetwork -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#SpeechTransmisionOverNetwork">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#SpeechTransmision"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#SpokenDialogSystems -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#SpokenDialogSystems">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#InteractiveSpeechSystems"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#SpokenLanguageRecognition -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#SpokenLanguageRecognition">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#LanguageRecognition"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#StutteringRecognition -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#StutteringRecognition">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#SpeechDisorderDiagnosis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#SyllableSegmentation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#SyllableSegmentation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#SpeechSegmentation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#TextToSpeech -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#TextToSpeech">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#SpeechSynthesis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#UnfamiliarVoiceDiscrimination -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#UnfamiliarVoiceDiscrimination">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#VoiceDiscrimination"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#UrgencyDetection -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#UrgencyDetection">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#SentimentAnalysisFromSpeech"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#VoiceActivityDetection -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#VoiceActivityDetection">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#SpeechAnalysis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#VoiceCloning -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#VoiceCloning">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#SpeechSynthesis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#VoiceConversion -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#VoiceConversion">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#SpeechConversion"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#VoiceDiscrimination -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#VoiceDiscrimination">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#SpeakerRecognition"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#VoiceDiscriminationCochlearImplants -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#VoiceDiscriminationCochlearImplants">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#VoiceDiscrimination"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#VoiceDiscriminationINFANTS -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#VoiceDiscriminationINFANTS">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#VoiceDiscrimination"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#VoiceQualityAnalysis -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#VoiceQualityAnalysis">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#SpeechAnalysis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#WordSegmentation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#WordSegmentation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#SpeechSegmentation"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#Arabic -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#Arabic">
+        <rdf:type rdf:resource="http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#Languages"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#DeepNeuralNetwork -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#DeepNeuralNetwork">
+        <rdf:type rdf:resource="http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#Algorithms"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#English -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#English">
+        <rdf:type rdf:resource="http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#Languages"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#French -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#French">
+        <rdf:type rdf:resource="http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#Languages"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#German -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#German">
+        <rdf:type rdf:resource="http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#Languages"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#HiddenMarcoveModel -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#HiddenMarcoveModel">
+        <rdf:type rdf:resource="http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#Algorithms"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#Italian -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#Italian">
+        <rdf:type rdf:resource="http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#Languages"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#MachineLearning -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#MachineLearning">
+        <rdf:type rdf:resource="http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#Algorithms"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#Others -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#Others">
+        <rdf:type rdf:resource="http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#Languages"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#Persain -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#Persain">
+        <rdf:type rdf:resource="http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#Languages"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#RuleBased -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#RuleBased">
+        <rdf:type rdf:resource="http://www.semanticweb.org/fadakpc/ontologies/2024/4/Speech-Processing#Algorithms"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
