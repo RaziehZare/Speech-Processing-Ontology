@@ -30,13 +30,14 @@ Developed following Bermejo's structured approach:
 5.  **Relationship Definition:** Properties like 'precedes' and 'followed by' create a dynamic knowledge network.
 
 ##  Repository Structure
+```text
 Speech-Processing-Ontology/
 ├── Speech_Processing_Ontology.owl        # Main ontology file (OWL format)
 ├── docs/
 │   └── Speech_Processing_Ontology_Report.pdf   # Full project report
 ├── LICENSE                                # MIT License
 └── README.md
-
+```
 
 
 ## Getting Started
@@ -48,12 +49,13 @@ Speech-Processing-Ontology/
 1. Clone this repository:
    ```bash
    git clone https://github.com/RaziehZare/Speech-Processing-Ontology.git
+
 2. Open the Speech_Processing_Ontology.owl file in Protégé.
 3. Explore the class hierarchy, object properties, and data properties through the Protégé interface.
 
    
 ## Citation
-
+```bibtex
 @software{Zare_Speech_Processing_Ontology_2025,
   author       = {Zare, Razieh},
   title        = {Speech Processing Ontology},
@@ -62,7 +64,7 @@ Speech-Processing-Ontology/
   url          = {https://github.com/RaziehZare/Speech-Processing-Ontology},
   note         = {Developed following Bermejo's methodology (2007)}
 }
-
+```
 
  ## License
 This project is open source and available under the MIT License.
