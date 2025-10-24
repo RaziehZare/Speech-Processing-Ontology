@@ -46,12 +46,16 @@ Speech-Processing-Ontology/
 ### Installation & Exploration
 1. Clone this repository:
    ```bash
-   git clone https://github.com/[YourUsername]/Speech-Processing-Ontology.git
+   git clone https://github.com/RaziehZare/Speech-Processing-Ontology.git
 2. Open the Speech_Processing_Ontology.owl file in Protégé.
 3. Explore the class hierarchy, object properties, and data properties through the Protégé interface.
 
+   
 ## Citation
+
 If you use this ontology in academic work, please cite:
+
+```bibtex
 @software{Zare_Speech_Processing_Ontology_2025,
   author = {Zare, Razieh},
   title = {Speech Processing Ontology},
