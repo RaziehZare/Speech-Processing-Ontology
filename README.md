@@ -55,6 +55,7 @@ Speech-Processing-Ontology/
 
    
 ## Citation
+If you use this ontology in academic work, please cite:
 ```bibtex
 @software{Zare_Speech_Processing_Ontology_2025,
   author       = {Zare, Razieh},
