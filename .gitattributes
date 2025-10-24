@@ -1,1 +1,3 @@
+# Language detection
 *.owl linguist-language=Web Ontology Language
+*.owl linguist-detectable=true
