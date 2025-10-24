@@ -28,3 +28,8 @@ Developed following Bermejo's structured approach:
 3.  **Terminology Extraction:** Drawing from foundational texts and emerging research.
 4.  **Class Creation & Hierarchy Design:** 79 main concepts with carefully resolved terminological overlaps (e.g., Speaker Verification vs. Voice Discrimination).
 5.  **Relationship Definition:** Properties like 'precedes' and 'followed by' create a dynamic knowledge network.
+
+## Acknowledgments
+- This ontology was developed as a course project for **Knowledge Engineering and Ontology** at the **University of Isfahan** in July 2024.
+- Supervisor: **Dr. CheshmehSohrabi**
+- Methodology inspired by: Bermejo, J. (2007). A simplified guide to create an ontology.
